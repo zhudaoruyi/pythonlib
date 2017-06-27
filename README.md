@@ -1,11 +1,12 @@
 # python 库的学习记录
-***
+
 splendid python library
 
 ## argparse
 </br>
 **一、简介：**
-- `argparse`是python用于解析命令行参数和选项的标准模块，用于代替已经过时的optparse模块。argparse模块的作用是用于解析命令行参数，例如`python parseTest.py input.txt output.txt --user=name --port=8080`
+
+- `argparse`是 `python` 用于解析命令行参数和选项的标准模块，用于代替已经过时的 `optparse` 模块。 `argparse` 模块的作用是用于解析命令行参数，例如 `python parseTest.py input.txt output.txt --user=name --port=8080`
 
 **二、使用步骤：**
 - 1：import argparse
@@ -14,7 +15,8 @@ splendid python library
 - 4：parser.parse_args()
 
   *解释：首先导入该模块；然后创建一个解析对象；然后向该对象中添加你要关注的命令行参数和选项，每一个add_argument方法对应一个你要关注的参数或选项；最后调用parse_args()方法进行解析；解析成功之后即可使用，下面简单说明一下步骤2和3。*
- 
+
+
 **三、方法ArgumentParser**(prog=None, usage=None,description=None, epilog=None, parents=[],formatter_class=argparse.HelpFormatter, prefix_chars='-',fromfile_prefix_chars=None, argument_default=None,conflict_handler='error', add_help=True)
 
 这些参数都有默认值，当调用parser.print_help()或者运行程序时由于参数不正确(此时python解释器其实也是调用了pring_help()方法)时，会打印这些描述信息，一般只需要传递description参数，如上。
